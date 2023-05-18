@@ -7,7 +7,7 @@ from funcoesTrabalhoInd import *
 resultados = []
 numeroCand = int(input('Quantos candidatos deseja cadastrar?'))
 
-''' O laço for percorre o numero de candidatos presente na variável numeroCand. Ou seja o numero inputado pelo usuário é o número de vezes que o laço irá repetir. A primeira reprodução de for inicia com um print "Candidato 1", pois o indice inicia em zero, então colocamos "{i+1}" para iniciar no indice 1. A variável resultado chama a função registrarCandidato para que a lista "resultados" possa armazenar os candidatos cadastrados pelo usuário por meio do método ".append" na linha 14.'''
+''' Percorrendo o numero de candidatos presente na variável numeroCand. E adicionando os candidatos à lista "resultados". '''
 
 for i in range(numeroCand):
     print(f'\nCandidato {i+1}')
@@ -29,7 +29,7 @@ candidatos = buscaCandidato (resultados,notaMin)
 
 print ('\nCandidatos compatíveis: \n')
 
-''' O laço 'for' percorre a variável candidatos que puxa a função. E então o print ocorre assim que cumprido as verificações da função "buscaCandidatos" vendo assim a compatibilidade do candidato de acordo com os critérios inputados'''
+''' Print dos candidatos compatíveis.'''
 
 for candidato in candidatos:
     print(candidato) 
